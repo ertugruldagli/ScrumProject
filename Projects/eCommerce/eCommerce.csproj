@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmPhones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhones.Designer.cs">
+      <DependentUpon>frmPhones.cs</DependentUpon>
+    </Compile>
     <Compile Include="Shopping.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmPhones.resx">
+      <DependentUpon>frmPhones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -97,6 +106,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gerituşu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-portable-communications-device-mobile-phone-accessories-mobile-phones-smartphone-logo-broken-glass-angle-electronics-gadget.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Telefon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ev.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pc1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisişel bakım.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tv1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arcelik-dugun-paketi-2020.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

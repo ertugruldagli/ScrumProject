@@ -23,5 +23,11 @@ namespace eCommerce
             frmLogin.ShowDialog();  
 
         }
+
+        private void telefonlarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPhones frmPhones = new frmPhones();
+            frmPhones.ShowDialog();
+        }
     }
 }

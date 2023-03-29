@@ -63,6 +63,26 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap arcelik_dugun_paketi_2020 {
+            get {
+                object obj = ResourceManager.GetObject("arcelik-dugun-paketi-2020", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ev {
+            get {
+                object obj = ResourceManager.GetObject("ev", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap geri {
             get {
                 object obj = ResourceManager.GetObject("geri", resourceCulture);
@@ -83,9 +103,90 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kisişel_bakım {
+            get {
+                object obj = ResourceManager.GetObject("kisişel bakım", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pc {
+            get {
+                object obj = ResourceManager.GetObject("pc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pc1 {
+            get {
+                object obj = ResourceManager.GetObject("pc1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_portable_communications_device_mobile_phone_accessories_mobile_phones_smartphone_logo_broken_glass_angle_electronics_gadget {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-portable-communications-device-mobile-phone-accessories-mobile-ph" +
+                        "ones-smartphone-logo-broken-glass-angle-electronics-gadget", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap saat {
+            get {
+                object obj = ResourceManager.GetObject("saat", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap shopping {
             get {
                 object obj = ResourceManager.GetObject("shopping", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Telefon {
+            get {
+                object obj = ResourceManager.GetObject("Telefon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tv {
+            get {
+                object obj = ResourceManager.GetObject("tv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tv1 {
+            get {
+                object obj = ResourceManager.GetObject("tv1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

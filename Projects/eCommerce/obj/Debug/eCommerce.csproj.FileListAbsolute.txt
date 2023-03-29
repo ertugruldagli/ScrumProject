@@ -10,3 +10,4 @@ C:\UCC08\Projects\ScrumProject\Projects\eCommerce\obj\Debug\eCommerce.exe
 C:\UCC08\Projects\ScrumProject\Projects\eCommerce\obj\Debug\eCommerce.pdb
 C:\UCC08\Projects\ScrumProject\Projects\eCommerce\obj\Debug\eCommerce.Login.resources
 C:\UCC08\Projects\ScrumProject\Projects\eCommerce\obj\Debug\eCommerce.Shopping.resources
+C:\UCC08\Projects\ScrumProject\Projects\eCommerce\obj\Debug\eCommerce.frmPhones.resources
