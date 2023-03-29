@@ -16,7 +16,7 @@ namespace eCommerce
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPhones());
+            Application.Run(new frmLogin());
         }
     }
 }
