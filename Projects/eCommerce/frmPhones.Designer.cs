@@ -37,18 +37,19 @@
             this.elektrikliEvAletleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.beyazEşyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kişiselBakımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPAndorid = new System.Windows.Forms.TabPage();
+            this.pBoxAndroid = new System.Windows.Forms.PictureBox();
+            this.dgridAndorid = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.liboxAndroid = new System.Windows.Forms.ListBox();
+            this.tboxAPrice = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPAndorid.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxAndroid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridAndorid)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -80,138 +81,129 @@
             // 
             this.telefonlarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.telefonlarToolStripMenuItem.Name = "telefonlarToolStripMenuItem";
-            this.telefonlarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.telefonlarToolStripMenuItem.Text = "Telefonlar";
+            this.telefonlarToolStripMenuItem.Size = new System.Drawing.Size(58, 20);
+            this.telefonlarToolStripMenuItem.Text = "Phones";
             // 
             // bilgisayarVeTabletToolStripMenuItem
             // 
             this.bilgisayarVeTabletToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.bilgisayarVeTabletToolStripMenuItem.Name = "bilgisayarVeTabletToolStripMenuItem";
-            this.bilgisayarVeTabletToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
-            this.bilgisayarVeTabletToolStripMenuItem.Text = "Bilgisayar ve Tablet";
+            this.bilgisayarVeTabletToolStripMenuItem.Size = new System.Drawing.Size(130, 20);
+            this.bilgisayarVeTabletToolStripMenuItem.Text = "Computer and Tablet";
             // 
             // giyilebilirTeknolojiToolStripMenuItem
             // 
             this.giyilebilirTeknolojiToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.giyilebilirTeknolojiToolStripMenuItem.Name = "giyilebilirTeknolojiToolStripMenuItem";
-            this.giyilebilirTeknolojiToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
-            this.giyilebilirTeknolojiToolStripMenuItem.Text = "Giyilebilir Teknoloji";
+            this.giyilebilirTeknolojiToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.giyilebilirTeknolojiToolStripMenuItem.Text = "Smart Wear";
             // 
             // televizyonlarToolStripMenuItem
             // 
             this.televizyonlarToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.televizyonlarToolStripMenuItem.Name = "televizyonlarToolStripMenuItem";
-            this.televizyonlarToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.televizyonlarToolStripMenuItem.Text = "Televizyonlar";
+            this.televizyonlarToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.televizyonlarToolStripMenuItem.Text = "Televisions";
             // 
             // elektrikliEvAletleriToolStripMenuItem
             // 
             this.elektrikliEvAletleriToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.elektrikliEvAletleriToolStripMenuItem.Name = "elektrikliEvAletleriToolStripMenuItem";
-            this.elektrikliEvAletleriToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
-            this.elektrikliEvAletleriToolStripMenuItem.Text = "Elektrikli Ev Aletleri";
+            this.elektrikliEvAletleriToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.elektrikliEvAletleriToolStripMenuItem.Text = "E-Homes";
             // 
             // beyazEşyaToolStripMenuItem
             // 
             this.beyazEşyaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.beyazEşyaToolStripMenuItem.Name = "beyazEşyaToolStripMenuItem";
-            this.beyazEşyaToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.beyazEşyaToolStripMenuItem.Text = "Beyaz Eşya";
+            this.beyazEşyaToolStripMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.beyazEşyaToolStripMenuItem.Text = "Ankastre Set";
             // 
             // kişiselBakımToolStripMenuItem
             // 
             this.kişiselBakımToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.kişiselBakımToolStripMenuItem.Name = "kişiselBakımToolStripMenuItem";
-            this.kişiselBakımToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
-            this.kişiselBakımToolStripMenuItem.Text = "Kişisel Bakım";
+            this.kişiselBakımToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.kişiselBakımToolStripMenuItem.Text = "Personel Cleaning";
             // 
-            // panel1
+            // tabControl1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(48)))), ((int)(((byte)(49)))));
-            this.panel1.CausesValidation = false;
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(168, 58);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(566, 31);
-            this.panel1.TabIndex = 2;
+            this.tabControl1.Controls.Add(this.tabPAndorid);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(12, 45);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(722, 387);
+            this.tabControl1.TabIndex = 5;
             // 
-            // label2
+            // tabPAndorid
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(90, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(14, 15);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "|";
+            this.tabPAndorid.BackColor = System.Drawing.Color.Gainsboro;
+            this.tabPAndorid.Controls.Add(this.label1);
+            this.tabPAndorid.Controls.Add(this.tboxAPrice);
+            this.tabPAndorid.Controls.Add(this.liboxAndroid);
+            this.tabPAndorid.Controls.Add(this.pBoxAndroid);
+            this.tabPAndorid.Controls.Add(this.dgridAndorid);
+            this.tabPAndorid.Location = new System.Drawing.Point(4, 22);
+            this.tabPAndorid.Name = "tabPAndorid";
+            this.tabPAndorid.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPAndorid.Size = new System.Drawing.Size(714, 361);
+            this.tabPAndorid.TabIndex = 0;
+            this.tabPAndorid.Text = "Android";
             // 
-            // label7
+            // pBoxAndroid
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(101, 7);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 15);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "SATIŞ";
+            this.pBoxAndroid.Location = new System.Drawing.Point(554, 6);
+            this.pBoxAndroid.Name = "pBoxAndroid";
+            this.pBoxAndroid.Size = new System.Drawing.Size(131, 105);
+            this.pBoxAndroid.TabIndex = 1;
+            this.pBoxAndroid.TabStop = false;
             // 
-            // label4
+            // dgridAndorid
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(478, 7);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(14, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "|";
+            this.dgridAndorid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgridAndorid.Location = new System.Drawing.Point(6, 6);
+            this.dgridAndorid.Name = "dgridAndorid";
+            this.dgridAndorid.Size = new System.Drawing.Size(505, 349);
+            this.dgridAndorid.TabIndex = 0;
+            this.dgridAndorid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridAndorid_CellClick);
             // 
-            // label3
+            // tabPage2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(498, 7);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Broşür";
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(714, 361);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "IOS";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // liboxAndroid
+            // 
+            this.liboxAndroid.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.liboxAndroid.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.liboxAndroid.FormattingEnabled = true;
+            this.liboxAndroid.ItemHeight = 19;
+            this.liboxAndroid.Location = new System.Drawing.Point(567, 135);
+            this.liboxAndroid.Name = "liboxAndroid";
+            this.liboxAndroid.Size = new System.Drawing.Size(107, 137);
+            this.liboxAndroid.TabIndex = 2;
+            // 
+            // tboxAPrice
+            // 
+            this.tboxAPrice.Location = new System.Drawing.Point(601, 299);
+            this.tboxAPrice.Name = "tboxAPrice";
+            this.tboxAPrice.Size = new System.Drawing.Size(84, 20);
+            this.tboxAPrice.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(3, 7);
+            this.label1.Location = new System.Drawing.Point(558, 302);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "TÜM MODELLER";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::eCommerce.Properties.Resources.tel02;
-            this.pictureBox1.Location = new System.Drawing.Point(8, 5);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(134, 74);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(12, 39);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 83);
-            this.panel2.TabIndex = 4;
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Price: ";
             // 
             // frmPhones
             // 
@@ -219,19 +211,20 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(746, 444);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmPhones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.frmPhones_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPAndorid.ResumeLayout(false);
+            this.tabPAndorid.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxAndroid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridAndorid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -248,13 +241,13 @@
         private System.Windows.Forms.ToolStripMenuItem elektrikliEvAletleriToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem beyazEşyaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem kişiselBakımToolStripMenuItem;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPAndorid;
+        private System.Windows.Forms.DataGridView dgridAndorid;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.PictureBox pBoxAndroid;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tboxAPrice;
+        private System.Windows.Forms.ListBox liboxAndroid;
     }
 }
