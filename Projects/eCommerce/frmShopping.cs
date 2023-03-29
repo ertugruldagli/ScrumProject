@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace eCommerce
 {
-    public partial class Shopping : Form
+    public partial class frmShopping : Form
     {
-        public Shopping()
+        public frmShopping()
         {
             InitializeComponent();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Login frmLogin=new Login();
+            frmLogin frmLogin=new frmLogin();
             frmLogin.ShowDialog();  
 
         }

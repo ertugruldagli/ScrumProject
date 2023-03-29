@@ -1,6 +1,6 @@
 ﻿namespace eCommerce
 {
-    partial class Shopping
+    partial class frmShopping
     {
         /// <summary>
         /// Required designer variable.

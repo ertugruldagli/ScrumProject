@@ -1,6 +1,6 @@
 ﻿namespace eCommerce
 {
-    partial class Login
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.müşteriGirişiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.programBilgileriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();

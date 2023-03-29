@@ -19,10 +19,13 @@ namespace eCommerce
 
         private void sefsdgToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Shopping frmShop=new Shopping();
+            frmShopping frmShop=new frmShopping();
             frmShop.ShowDialog();
         }
 
-     
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

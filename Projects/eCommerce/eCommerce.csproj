@@ -52,25 +52,25 @@
     <Compile Include="frmPhones.Designer.cs">
       <DependentUpon>frmPhones.cs</DependentUpon>
     </Compile>
-    <Compile Include="Shopping.cs">
+    <Compile Include="frmShopping.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Shopping.Designer.cs">
-      <DependentUpon>Shopping.cs</DependentUpon>
+    <Compile Include="frmShopping.Designer.cs">
+      <DependentUpon>frmShopping.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPhones.resx">
       <DependentUpon>frmPhones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,8 +82,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Shopping.resx">
-      <DependentUpon>Shopping.cs</DependentUpon>
+    <EmbeddedResource Include="frmShopping.resx">
+      <DependentUpon>frmShopping.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -136,6 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\arcelik-dugun-paketi-2020.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tel02.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
