@@ -29,29 +29,74 @@
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.sefsdgToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.telefonlarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bilgisayarVeTabletToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.beyazEşyaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.elektrikliEvAletleriToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.giyilebilirTeknolojiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.kişiselBakımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(48)))), ((int)(((byte)(49)))));
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sefsdgToolStripMenuItem,
+            this.telefonlarToolStripMenuItem,
+            this.bilgisayarVeTabletToolStripMenuItem,
+            this.beyazEşyaToolStripMenuItem,
+            this.elektrikliEvAletleriToolStripMenuItem,
+            this.giyilebilirTeknolojiToolStripMenuItem,
+            this.kişiselBakımToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // pictureBox1
+            // sefsdgToolStripMenuItem
             // 
-            this.pictureBox1.Image = global::eCommerce.Properties.Resources.gerituşu;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(22, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.sefsdgToolStripMenuItem.Image = global::eCommerce.Properties.Resources.gerituşu;
+            this.sefsdgToolStripMenuItem.Name = "sefsdgToolStripMenuItem";
+            this.sefsdgToolStripMenuItem.Size = new System.Drawing.Size(28, 20);
+            // 
+            // telefonlarToolStripMenuItem
+            // 
+            this.telefonlarToolStripMenuItem.Name = "telefonlarToolStripMenuItem";
+            this.telefonlarToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.telefonlarToolStripMenuItem.Text = "Telefonlar";
+            // 
+            // bilgisayarVeTabletToolStripMenuItem
+            // 
+            this.bilgisayarVeTabletToolStripMenuItem.Name = "bilgisayarVeTabletToolStripMenuItem";
+            this.bilgisayarVeTabletToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+            this.bilgisayarVeTabletToolStripMenuItem.Text = "Bilgisayar ve Tablet";
+            // 
+            // beyazEşyaToolStripMenuItem
+            // 
+            this.beyazEşyaToolStripMenuItem.Name = "beyazEşyaToolStripMenuItem";
+            this.beyazEşyaToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.beyazEşyaToolStripMenuItem.Text = "Beyaz Eşya";
+            // 
+            // elektrikliEvAletleriToolStripMenuItem
+            // 
+            this.elektrikliEvAletleriToolStripMenuItem.Name = "elektrikliEvAletleriToolStripMenuItem";
+            this.elektrikliEvAletleriToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+            this.elektrikliEvAletleriToolStripMenuItem.Text = "Elektrikli Ev Aletleri";
+            // 
+            // giyilebilirTeknolojiToolStripMenuItem
+            // 
+            this.giyilebilirTeknolojiToolStripMenuItem.Name = "giyilebilirTeknolojiToolStripMenuItem";
+            this.giyilebilirTeknolojiToolStripMenuItem.Size = new System.Drawing.Size(118, 20);
+            this.giyilebilirTeknolojiToolStripMenuItem.Text = "Giyilebilir Teknoloji";
+            // 
+            // kişiselBakımToolStripMenuItem
+            // 
+            this.kişiselBakımToolStripMenuItem.Name = "kişiselBakımToolStripMenuItem";
+            this.kişiselBakımToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.kişiselBakımToolStripMenuItem.Text = "Kişisel Bakım";
             // 
             // Shopping
             // 
@@ -59,14 +104,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Shopping";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hoş Geldiniz...";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -75,6 +120,12 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem sefsdgToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem telefonlarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem bilgisayarVeTabletToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem beyazEşyaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem elektrikliEvAletleriToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem giyilebilirTeknolojiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem kişiselBakımToolStripMenuItem;
     }
 }
