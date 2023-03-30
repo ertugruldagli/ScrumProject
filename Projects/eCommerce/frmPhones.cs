@@ -11,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace eCommerce
 {
@@ -43,18 +44,19 @@ namespace eCommerce
         private void ShowData()
         {
             connection.Open();
-            SqlQuery = "SELECT Marka, Model, Memory, Color, Price FROM TBLTelefon WHERE Category='A'";
+            SqlQuery = "SELECT Marka, Model, Memory, Color, Price, ImagePath FROM TBLTelefon WHERE Category='A'";
 
-                SqlCommand cmd = new SqlCommand(SqlQuery, connection);
-
-                using (SqlDataAdapter dAdapter = new SqlDataAdapter(cmd))
-                {
+             SqlCommand cmd = new SqlCommand(SqlQuery, connection);
+                
+            using (SqlDataAdapter dAdapter = new SqlDataAdapter(cmd))
+            {
                     DataSet dSet = new DataSet();
                     dAdapter.Fill(dSet);
 
                     dgridAndorid.DataSource = dSet.Tables[0];
+                
 
-                }
+            }
 
             connection.Close();
         }
@@ -77,9 +79,9 @@ namespace eCommerce
             // Sql'deki Price sütündaki fiyatı textboxa yazar....
             tboxAPrice.Text = dgridAndorid.Rows[e.RowIndex].Cells[4].Value.ToString();
 
-
-            pBoxAndroid.Image = Image.FromFile("C:\\UCC08\\Projects\\ScrumProject\\Projects\\eCommerce\\Resources\\indir.jpeg");
+            pBoxAndroid.ImageLocation = dgridAndorid.CurrentRow.Cells[5].Value.ToString();
             pBoxAndroid.SizeMode = PictureBoxSizeMode.StretchImage;
+
         }
 
 
@@ -92,9 +94,9 @@ namespace eCommerce
         {
 
             connection.Open();
-            SqlQuery = "SELECT Marka, Model, Memory, Color, Price FROM TBLTelefon WHERE Category='I'";
+            SqlQuery = "SELECT Marka, Model, Memory, Color, Price , ImagePath FROM TBLTelefon WHERE Category='I'";
 
-            SqlCommand cmd = new SqlCommand("SELECT Marka, Model, Memory, Color, Price FROM TBLTelefon WHERE Category='I'", connection);
+            SqlCommand cmd = new SqlCommand(SqlQuery, connection);
 
             using (SqlDataAdapter dAdapter = new SqlDataAdapter(cmd))
             {
@@ -123,7 +125,7 @@ namespace eCommerce
             tboxIosPrice.Text = dgridIos.Rows[e.RowIndex].Cells[4].Value.ToString();
 
 
-            pBoxIos.Image = Image.FromFile("C:\\UCC08\\Projects\\ScrumProject\\Projects\\eCommerce\\Resources\\indir.jpeg");
+            pBoxIos.ImageLocation = dgridIos.CurrentRow.Cells[5].Value.ToString();
             pBoxIos.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         #endregion
