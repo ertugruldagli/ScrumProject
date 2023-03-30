@@ -39,17 +39,25 @@
             this.kişiselBakımToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPAndorid = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tboxAPrice = new System.Windows.Forms.TextBox();
+            this.liboxAndroid = new System.Windows.Forms.ListBox();
             this.pBoxAndroid = new System.Windows.Forms.PictureBox();
             this.dgridAndorid = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.liboxAndroid = new System.Windows.Forms.ListBox();
-            this.tboxAPrice = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tboxIosPrice = new System.Windows.Forms.TextBox();
+            this.liboxIos = new System.Windows.Forms.ListBox();
+            this.pBoxIos = new System.Windows.Forms.PictureBox();
+            this.dgridIos = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPAndorid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAndroid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgridAndorid)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxIos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridIos)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -135,6 +143,7 @@
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(722, 387);
             this.tabControl1.TabIndex = 5;
+            this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
             // tabPAndorid
             // 
@@ -151,32 +160,21 @@
             this.tabPAndorid.TabIndex = 0;
             this.tabPAndorid.Text = "Android";
             // 
-            // pBoxAndroid
+            // label1
             // 
-            this.pBoxAndroid.Location = new System.Drawing.Point(554, 6);
-            this.pBoxAndroid.Name = "pBoxAndroid";
-            this.pBoxAndroid.Size = new System.Drawing.Size(131, 105);
-            this.pBoxAndroid.TabIndex = 1;
-            this.pBoxAndroid.TabStop = false;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(581, 294);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Price: ";
             // 
-            // dgridAndorid
+            // tboxAPrice
             // 
-            this.dgridAndorid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgridAndorid.Location = new System.Drawing.Point(6, 6);
-            this.dgridAndorid.Name = "dgridAndorid";
-            this.dgridAndorid.Size = new System.Drawing.Size(505, 349);
-            this.dgridAndorid.TabIndex = 0;
-            this.dgridAndorid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridAndorid_CellClick);
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(714, 361);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "IOS";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.tboxAPrice.Location = new System.Drawing.Point(624, 291);
+            this.tboxAPrice.Name = "tboxAPrice";
+            this.tboxAPrice.Size = new System.Drawing.Size(84, 20);
+            this.tboxAPrice.TabIndex = 3;
             // 
             // liboxAndroid
             // 
@@ -184,26 +182,88 @@
             this.liboxAndroid.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.liboxAndroid.FormattingEnabled = true;
             this.liboxAndroid.ItemHeight = 19;
-            this.liboxAndroid.Location = new System.Drawing.Point(567, 135);
+            this.liboxAndroid.Location = new System.Drawing.Point(590, 127);
             this.liboxAndroid.Name = "liboxAndroid";
             this.liboxAndroid.Size = new System.Drawing.Size(107, 137);
             this.liboxAndroid.TabIndex = 2;
             // 
-            // tboxAPrice
+            // pBoxAndroid
             // 
-            this.tboxAPrice.Location = new System.Drawing.Point(601, 299);
-            this.tboxAPrice.Name = "tboxAPrice";
-            this.tboxAPrice.Size = new System.Drawing.Size(84, 20);
-            this.tboxAPrice.TabIndex = 3;
+            this.pBoxAndroid.Location = new System.Drawing.Point(577, 6);
+            this.pBoxAndroid.Name = "pBoxAndroid";
+            this.pBoxAndroid.Size = new System.Drawing.Size(131, 105);
+            this.pBoxAndroid.TabIndex = 1;
+            this.pBoxAndroid.TabStop = false;
             // 
-            // label1
+            // dgridAndorid
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(558, 302);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Price: ";
+            this.dgridAndorid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgridAndorid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgridAndorid.Location = new System.Drawing.Point(6, 6);
+            this.dgridAndorid.Name = "dgridAndorid";
+            this.dgridAndorid.Size = new System.Drawing.Size(565, 349);
+            this.dgridAndorid.TabIndex = 0;
+            this.dgridAndorid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridAndorid_CellClick);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.tboxIosPrice);
+            this.tabPage2.Controls.Add(this.liboxIos);
+            this.tabPage2.Controls.Add(this.pBoxIos);
+            this.tabPage2.Controls.Add(this.dgridIos);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(714, 361);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "IOS";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(570, 302);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Price: ";
+            // 
+            // tboxIosPrice
+            // 
+            this.tboxIosPrice.Location = new System.Drawing.Point(613, 299);
+            this.tboxIosPrice.Name = "tboxIosPrice";
+            this.tboxIosPrice.Size = new System.Drawing.Size(84, 20);
+            this.tboxIosPrice.TabIndex = 8;
+            // 
+            // liboxIos
+            // 
+            this.liboxIos.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.liboxIos.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.liboxIos.FormattingEnabled = true;
+            this.liboxIos.ItemHeight = 19;
+            this.liboxIos.Location = new System.Drawing.Point(579, 135);
+            this.liboxIos.Name = "liboxIos";
+            this.liboxIos.Size = new System.Drawing.Size(107, 137);
+            this.liboxIos.TabIndex = 7;
+            // 
+            // pBoxIos
+            // 
+            this.pBoxIos.Location = new System.Drawing.Point(566, 6);
+            this.pBoxIos.Name = "pBoxIos";
+            this.pBoxIos.Size = new System.Drawing.Size(131, 105);
+            this.pBoxIos.TabIndex = 6;
+            this.pBoxIos.TabStop = false;
+            // 
+            // dgridIos
+            // 
+            this.dgridIos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgridIos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgridIos.Location = new System.Drawing.Point(6, 6);
+            this.dgridIos.Name = "dgridIos";
+            this.dgridIos.Size = new System.Drawing.Size(554, 349);
+            this.dgridIos.TabIndex = 5;
+            this.dgridIos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgridIos_CellContentClick);
             // 
             // frmPhones
             // 
@@ -225,6 +285,10 @@
             this.tabPAndorid.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBoxAndroid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgridAndorid)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pBoxIos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgridIos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -249,5 +313,10 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tboxAPrice;
         private System.Windows.Forms.ListBox liboxAndroid;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tboxIosPrice;
+        private System.Windows.Forms.ListBox liboxIos;
+        private System.Windows.Forms.PictureBox pBoxIos;
+        private System.Windows.Forms.DataGridView dgridIos;
     }
 }

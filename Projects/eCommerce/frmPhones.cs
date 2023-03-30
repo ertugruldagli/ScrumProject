@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Common;
@@ -15,8 +16,9 @@ namespace eCommerce
 {
     public partial class frmPhones : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=TEKNOLOGYDB;Integrated Security=True");
-        string SqlQuery = " ";
+        SqlConnection connection = new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=TEKNOLOGYDB;Integrated Security=True"); //Sql bağlantısı
+        string SqlQuery = " ";  //SQL sorgularını yhazmak için oluşturulan değişken...
+        
         public frmPhones()
         {
             InitializeComponent();
@@ -24,70 +26,121 @@ namespace eCommerce
 
         private void sefsdgToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmShopping frmShop=new frmShopping();
+            frmShopping frmShop = new frmShopping();
             frmShop.ShowDialog();
         }
 
+        #region Form Özellikleri
         private void PropertyForm()
         {
             dgridAndorid.RowHeadersVisible = false; //Eğer gd nin en baş tarafındaki kolunu görmmek istemiyorsak
+            dgridIos.RowHeadersVisible = false;
         }
+        #endregion
 
+
+        #region DataGrid Android Verileri Tabloya Aktar
         private void ShowData()
         {
-            SqlQuery = "SELECT Marka, Model, Memory, Color, Price FROM TBLTelefon WHERE Category='A' ";
-            
-            using (connection)
-            {
-               SqlCommand cmd =new SqlCommand(SqlQuery,connection);
+            connection.Open();
+            SqlQuery = "SELECT Marka, Model, Memory, Color, Price FROM TBLTelefon WHERE Category='A'";
+
+                SqlCommand cmd = new SqlCommand(SqlQuery, connection);
 
                 using (SqlDataAdapter dAdapter = new SqlDataAdapter(cmd))
                 {
-                    DataSet dSet = new DataSet(); 
+                    DataSet dSet = new DataSet();
                     dAdapter.Fill(dSet);
 
                     dgridAndorid.DataSource = dSet.Tables[0];
+
                 }
-            }
-             
+
+            connection.Close();
         }
 
-        
 
-        private void frmPhones_Load(object sender, EventArgs e)
-        {
-            ShowData();
-            PropertyForm();
-        }
 
+        #endregion
+
+        #region DataGrid Android DoubleClick
         private void dgridAndorid_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             liboxAndroid.Items.Clear();
 
-            //liboxAndroid.Items.Add(
-            //  dgridAndorid.Rows[e.RowIndex].Cells[0].Value.ToString() +
-            //  dgridAndorid.Rows[e.RowIndex].Cells[1].Value.ToString() +
-            //  dgridAndorid.Rows[e.RowIndex].Cells[2].Value.ToString() +
-            //  dgridAndorid.Rows[e.RowIndex].Cells[3].Value.ToString()
-
-            // );
+            //Sql'deki Price sütündaki fiyatı listboxa yazar....
             liboxAndroid.Items.Add(dgridAndorid.Rows[e.RowIndex].Cells[0].Value.ToString());
             liboxAndroid.Items.Add(dgridAndorid.Rows[e.RowIndex].Cells[1].Value.ToString());
             liboxAndroid.Items.Add(dgridAndorid.Rows[e.RowIndex].Cells[2].Value.ToString());
             liboxAndroid.Items.Add(dgridAndorid.Rows[e.RowIndex].Cells[3].Value.ToString());
 
+            // Sql'deki Price sütündaki fiyatı textboxa yazar....
+            tboxAPrice.Text = dgridAndorid.Rows[e.RowIndex].Cells[4].Value.ToString();
 
-
-            tboxAPrice.Text = dgridAndorid.Rows[e.RowIndex].Cells[4].ToString();
-
-
-            
 
             pBoxAndroid.Image = Image.FromFile("C:\\UCC08\\Projects\\ScrumProject\\Projects\\eCommerce\\Resources\\indir.jpeg");
             pBoxAndroid.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
 
+
+        #endregion
+
+
+        #region DataGrid Ios Verileri Tabloya Aktar
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+
+            connection.Open();
+            SqlQuery = "SELECT Marka, Model, Memory, Color, Price FROM TBLTelefon WHERE Category='I'";
+
+            SqlCommand cmd = new SqlCommand("SELECT Marka, Model, Memory, Color, Price FROM TBLTelefon WHERE Category='I'", connection);
+
+            using (SqlDataAdapter dAdapter = new SqlDataAdapter(cmd))
+            {
+                DataSet dSet = new DataSet();
+                dAdapter.Fill(dSet);
+                dgridIos.DataSource = dSet.Tables[0];
+            }
+
+            connection.Close();
+
+        }
+        #endregion
+
+        #region DataGRid Ios DoubleClick
+        private void dgridIos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            liboxIos.Items.Clear();
+
+            //Sql'deki Price sütündaki fiyatı listboxa yazar....
+            liboxIos.Items.Add(dgridIos.Rows[e.RowIndex].Cells[0].Value.ToString());
+            liboxIos.Items.Add(dgridIos.Rows[e.RowIndex].Cells[1].Value.ToString());
+            liboxIos.Items.Add(dgridIos.Rows[e.RowIndex].Cells[2].Value.ToString());
+            liboxIos.Items.Add(dgridIos.Rows[e.RowIndex].Cells[3].Value.ToString());
+
+            // Sql'deki Price sütündaki fiyatı textboxa yazar....
+            tboxIosPrice.Text = dgridIos.Rows[e.RowIndex].Cells[4].Value.ToString();
+
+
+            pBoxIos.Image = Image.FromFile("C:\\UCC08\\Projects\\ScrumProject\\Projects\\eCommerce\\Resources\\indir.jpeg");
+            pBoxIos.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+        #endregion
+
+
+        #region Form Load
+        private void frmPhones_Load(object sender, EventArgs e)
+        {
+            ShowData();
+           
+            PropertyForm();
+        }
+        #endregion
+
+    
+
+  
 
     }
 }
