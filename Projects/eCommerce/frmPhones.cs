@@ -47,17 +47,17 @@ namespace eCommerce
             SqlQuery = "SELECT Marka, Model, Memory, Color, Price, ImagePath FROM TBLTelefon WHERE Category='A'";
 
              SqlCommand cmd = new SqlCommand(SqlQuery, connection);
-                
+            
             using (SqlDataAdapter dAdapter = new SqlDataAdapter(cmd))
             {
                     DataSet dSet = new DataSet();
                     dAdapter.Fill(dSet);
 
                     dgridAndorid.DataSource = dSet.Tables[0];
-                
+                    dgridAndorid.Columns["ImagePath"].Visible = false;// kullanıcılara gözükmez..
 
             }
-
+             
             connection.Close();
         }
 
@@ -103,6 +103,7 @@ namespace eCommerce
                 DataSet dSet = new DataSet();
                 dAdapter.Fill(dSet);
                 dgridIos.DataSource = dSet.Tables[0];
+                dgridIos.Columns["ImagePath"].Visible = false;// kullanıcılara gözükmez..
             }
 
             connection.Close();
