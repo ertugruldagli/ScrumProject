@@ -75,9 +75,6 @@ namespace eCommerce
              
             connection.Close(); //Sql connection kapatıldı
         }
-
-
-
         #endregion
 
         #region DataGrid Android DoubleClick
