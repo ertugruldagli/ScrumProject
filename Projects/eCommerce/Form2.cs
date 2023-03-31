@@ -26,6 +26,8 @@ namespace eCommerce
         SqlCommand komut;
         DataTable dt;
 
+        //yorum sTIRI
+
         //sql ile bağlanmak için gerekli olan bağlantı kodlarını
         //griddoldur metotu içerisinde tanımladım..
         void griddoldur()
