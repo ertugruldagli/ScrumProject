@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace eCommerce
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -32,7 +32,7 @@ namespace eCommerce
         private void panel2_Click(object sender, EventArgs e)
         {
 
-            Shopping frmShop = new Shopping();
+            frmShopping frmShop = new frmShopping();
             frmShop.Show();
 
         }
