@@ -29,5 +29,11 @@ namespace eCommerce
             frmPhones frmPhones = new frmPhones();
             frmPhones.ShowDialog();
         }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            frmPhones frmPicturePhonrd= new frmPhones();    
+            frmPicturePhonrd.ShowDialog();
+        }
     }
 }

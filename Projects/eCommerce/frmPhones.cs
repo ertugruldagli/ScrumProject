@@ -39,7 +39,6 @@ namespace eCommerce
         }
         #endregion
 
-
         #region DataGrid Android Verileri Tabloya Aktar
         private void ShowData()
         {
@@ -88,7 +87,6 @@ namespace eCommerce
 
         #endregion
 
-
         #region DataGrid Ios Verileri Tabloya Aktar
         private void tabControl1_Click(object sender, EventArgs e)
         {
@@ -131,7 +129,6 @@ namespace eCommerce
         }
         #endregion
 
-
         #region Form Load
         private void frmPhones_Load(object sender, EventArgs e)
         {
@@ -140,10 +137,6 @@ namespace eCommerce
             PropertyForm();
         }
         #endregion
-
-    
-
-  
 
     }
 }
