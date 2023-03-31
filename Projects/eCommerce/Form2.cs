@@ -32,7 +32,7 @@ namespace eCommerce
         //griddoldur metotu içerisinde tanımladım..
         void griddoldur()
         {
-
+            //kkkk
             con = new SqlConnection(@"Data Source =LAPTOP-0DLJBOEE\SQLEXPRESS;Initial Catalog=teknoDB;Integrated Security=true");
             da = new SqlDataAdapter("SELECT GTID,GTType,GTMarka,GTModel,GTFiyat,GTImageYol FROM Table_1", con);
             ds = new DataSet();
