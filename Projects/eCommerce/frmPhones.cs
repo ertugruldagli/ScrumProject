@@ -18,7 +18,12 @@ namespace eCommerce
     public partial class frmPhones : Form
     {
         SqlConnection connection = new SqlConnection(@"Data Source=ED-INTERN;Initial Catalog=TEKNOLOGYDB;Integrated Security=True"); //Sql bağlantısı
-        string SqlQuery = " ";  //SQL sorgularını yhazmak için oluşturulan değişken...
+
+        string SqlQuery = " ";     //SQL sorgularını yazmak için oluşturulan değişken...
+
+        SqlCommand cmd;           //Sql'den veri çekmek için oluşturalan değişken global kısma tanımlandı...
+        SqlDataAdapter dAdapter; //Table ve yazılan sorguyu birleştirmak için köprü görevi görür...
+        DataSet dSet;           //Oluşurulan verileri data seti içerisine atama yapar.
         
         public frmPhones()
         {
@@ -26,11 +31,11 @@ namespace eCommerce
         }
 
 
-        #region Yonlendirme Blogu
+        #region Yonlendirme Blogu             
         private void sefsdgToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmShopping frmShop = new frmShopping();
-            frmShop.ShowDialog();
+            frmShopping frmShop = new frmShopping();        //formun içinde ilgili forma geçmek için kullanınlan tanımlamadır. Burada geçilen form için nesne oluşturulur.
+            frmShop.ShowDialog();                           //oluşturulan nesne(form) gösterilir.
         }
         #endregion
 
@@ -43,24 +48,32 @@ namespace eCommerce
         #endregion
 
         #region DataGrid Android Verileri Tabloya Aktar
-        private void ShowData()
+        private void ShowData()  
+
+            //method oluşturuldu: Veritabından çekilen verilen için gerekli işlemleri sayfa genelinde alt alta yazmak yerine methodlara ayrıldı. Spagetti kod yazımının önüne  geçildi.
         {
-            connection.Open();
-            SqlQuery = "SELECT Marka, Model, Memory, Color, Price, ImagePath FROM TBLTelefon WHERE Category='A'";
+            connection.Open();  //Sql connectionu burada çalıştırılır.
+            SqlQuery = "SELECT Marka, Model, Memory, Color, Price, ImagePath FROM TBLTelefon WHERE Category='A'"; //istenilen veritabnı sorgusu; globalde tanımlanan değişkene atılır.
 
-             SqlCommand cmd = new SqlCommand(SqlQuery, connection);
+            cmd = new SqlCommand(SqlQuery, connection);  //SqlCommand nesnesi, connection ile çağırılarak sql sorgusu çalıştırılır.
             
-            using (SqlDataAdapter dAdapter = new SqlDataAdapter(cmd))
-            {
-                    DataSet dSet = new DataSet();
-                    dAdapter.Fill(dSet);
+            using (dAdapter = new SqlDataAdapter(cmd))  // ADapter nesnesi oluşutularak tablo ile sorgu arasında köprü görevi oluşturulur.
 
-                    dgridAndorid.DataSource = dSet.Tables[0];
-                    dgridAndorid.Columns["ImagePath"].Visible = false;// kullanıcılara gözükmez..
+            //Using blogunda tanımlanmasının sebebi; Using Sayesinde manuel olarak nesneyi Dispose etmemmize gerek kalmaz.
+
+            //Dispose:IDisposable interface inden türemiş nesneler using(){} bloğu içinde oluşturulursa,using bloğundan çıkılır çıkılmaz GC(Garbage Collector)’ye devredilir ve hemen silinirler(Dispose edilirler).
+
+            //Çünkü IDisposable’den türemiş classlarda %100 Dispose metodu vardır.
+            {
+                dSet = new DataSet();               // Veri kümesi nesnesi oluşturuldu
+                    dAdapter.Fill(dSet);                //oluşturulan nesne, köprü ile birleştirildi
+
+                    dgridAndorid.DataSource = dSet.Tables[0]; // birleşim sonrası tablo içine dolduruldu.
+                    dgridAndorid.Columns["ImagePath"].Visible = false;// tablodaki istenilen kolon kullanıcılara gözükmez..
 
             }
              
-            connection.Close();
+            connection.Close(); //Sql connection kapatıldı
         }
 
 
@@ -81,6 +94,7 @@ namespace eCommerce
             // Sql'deki Price sütündaki fiyatı textboxa yazar....
             tboxAPrice.Text = dgridAndorid.Rows[e.RowIndex].Cells[4].Value.ToString();
 
+            // Sql'deki resim yolunu sütündaki pictureboxta gösterilir...
             pBoxAndroid.ImageLocation = dgridAndorid.CurrentRow.Cells[5].Value.ToString();
             pBoxAndroid.SizeMode = PictureBoxSizeMode.StretchImage;
 
@@ -93,15 +107,16 @@ namespace eCommerce
         #region DataGrid Ios Verileri Tabloya Aktar
         private void tabControl1_Click(object sender, EventArgs e)
         {
+            //tabControl1_Click event methodu: tabControl'e tıklama işlemi gerçekleştiğinde aşağıdaki işlemleri yerine getir.
 
             connection.Open();
             SqlQuery = "SELECT Marka, Model, Memory, Color, Price , ImagePath FROM TBLTelefon WHERE Category='I'";
 
-            SqlCommand cmd = new SqlCommand(SqlQuery, connection);
+             cmd = new SqlCommand(SqlQuery, connection);
 
-            using (SqlDataAdapter dAdapter = new SqlDataAdapter(cmd))
+            using ( dAdapter = new SqlDataAdapter(cmd))
             {
-                DataSet dSet = new DataSet();
+                dSet = new DataSet();
                 dAdapter.Fill(dSet);
                 dgridIos.DataSource = dSet.Tables[0];
                 dgridIos.Columns["ImagePath"].Visible = false;// kullanıcılara gözükmez..
@@ -113,7 +128,9 @@ namespace eCommerce
         #endregion
 
         #region DataGRid Ios DoubleClick
-        private void dgridIos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgridIos_CellContentClick(object sender, DataGridViewCellEventArgs e)    
+
+            //CellContenctClik event methodu: datagrid'e tıklama işlemi gerçekleştiğinde aşağıdaki işlemleri yerine getir.
         {
             liboxIos.Items.Clear();
 
@@ -132,10 +149,12 @@ namespace eCommerce
         }
         #endregion
 
-        #region Form Load
+        #region Form Load 
+
+        //Form çalıştırıldığında form ile çalışacak methodlar..
         private void frmPhones_Load(object sender, EventArgs e)
         {
-            ShowData();
+            ShowData(); 
            
             PropertyForm();
         }
