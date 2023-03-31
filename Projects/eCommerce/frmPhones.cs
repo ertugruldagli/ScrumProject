@@ -25,17 +25,20 @@ namespace eCommerce
             InitializeComponent();
         }
 
+
+        #region Yonlendirme Blogu
         private void sefsdgToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmShopping frmShop = new frmShopping();
             frmShop.ShowDialog();
         }
+        #endregion
 
         #region Form Özellikleri
         private void PropertyForm()
         {
-            dgridAndorid.RowHeadersVisible = false; //Eğer gd nin en baş tarafındaki kolunu görmmek istemiyorsak
-            dgridIos.RowHeadersVisible = false;
+            dgridAndorid.RowHeadersVisible = false; // Android DataGridView en baştaki boş kolonu gizle
+            dgridIos.RowHeadersVisible = false;    // Android DataGridView en baştaki boş kolonu gizle
         }
         #endregion
 
