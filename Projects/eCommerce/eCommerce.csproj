@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,31 +47,94 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmPhones.cs">
+    <Compile Include="frm2Pro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPhones.Designer.cs">
-      <DependentUpon>frmPhones.cs</DependentUpon>
+    <Compile Include="frm2Pro.Designer.cs">
+      <DependentUpon>frm2Pro.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmShopping.cs">
+    <Compile Include="frmDelBlue.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmShopping.Designer.cs">
-      <DependentUpon>frmShopping.cs</DependentUpon>
+    <Compile Include="frmDelBlue.Designer.cs">
+      <DependentUpon>frmDelBlue.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLogin.cs">
+    <Compile Include="frmDelGray.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLogin.Designer.cs">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <Compile Include="frmDelGray.Designer.cs">
+      <DependentUpon>frmDelGray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDelGreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDelGreen.Designer.cs">
+      <DependentUpon>frmDelGreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEsp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEsp.Designer.cs">
+      <DependentUpon>frmEsp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMop2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMop2.Designer.cs">
+      <DependentUpon>frmMop2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRob.Designer.cs">
+      <DependentUpon>FrmRob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frms10T.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frms10T.Designer.cs">
+      <DependentUpon>frms10T.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shopping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shopping.Designer.cs">
+      <DependentUpon>Shopping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmPhones.resx">
-      <DependentUpon>frmPhones.cs</DependentUpon>
+    <EmbeddedResource Include="frm2Pro.resx">
+      <DependentUpon>frm2Pro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLogin.resx">
-      <DependentUpon>frmLogin.cs</DependentUpon>
+    <EmbeddedResource Include="frmDelBlue.resx">
+      <DependentUpon>frmDelBlue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelGray.resx">
+      <DependentUpon>frmDelGray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDelGreen.resx">
+      <DependentUpon>frmDelGreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEsp.resx">
+      <DependentUpon>frmEsp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMop2.resx">
+      <DependentUpon>frmMop2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRob.resx">
+      <DependentUpon>FrmRob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frms10T.resx">
+      <DependentUpon>frms10T.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,8 +146,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="frmShopping.resx">
-      <DependentUpon>frmShopping.cs</DependentUpon>
+    <EmbeddedResource Include="Shopping.resx">
+      <DependentUpon>Shopping.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -108,40 +172,70 @@
     <None Include="Resources\gerituşu.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\png-transparent-portable-communications-device-mobile-phone-accessories-mobile-phones-smartphone-logo-broken-glass-angle-electronics-gadget.png" />
+    <None Include="Resources\2PRO_.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Telefon.jpg" />
+    <None Include="Resources\MOP 2 uLTRA AKILLI_.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ev.jpg" />
+    <None Include="Resources\xiomi s10T.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\saat.jpg" />
+    <None Include="Resources\ROBOROCK Q7 MAX_.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pc.jpg" />
+    <None Include="Resources\ROBOROCK Q7_.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pc1.jpg" />
+    <None Include="Resources\ROBOROCK S7 SONIC_.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\kisişel bakım.jpg" />
+    <None Include="Resources\ROBOROCK S7_.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tv.jpg" />
+    <None Include="Resources\SAMSUNG_.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tv1.jpg" />
+    <None Include="Resources\viomi.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\arcelik-dugun-paketi-2020.jpg" />
+    <None Include="Resources\delonghi ecp31,21_.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tel02.png" />
+    <None Include="Resources\Delonghi_Esam_460_.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Resources\tel.jpg" />
+    <None Include="Resources\delonghi ecp31,21_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELONGHI_ECOV311_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELONGHI_ECOV3_BLUE.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PHILIPS_EP4346_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Philips_EP5447_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Philips_p2220.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Philips_EP5447_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NESPRESSO_J520_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nespresso_j620.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DELONGHI_ECOV311_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3604b9f6-5f0c-4e38-a78b-211217822d42.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

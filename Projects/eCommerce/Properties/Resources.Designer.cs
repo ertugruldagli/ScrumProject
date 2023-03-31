@@ -63,9 +63,9 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap arcelik_dugun_paketi_2020 {
+        internal static System.Drawing.Bitmap _2PRO_ {
             get {
-                object obj = ResourceManager.GetObject("arcelik-dugun-paketi-2020", resourceCulture);
+                object obj = ResourceManager.GetObject("2PRO_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,69 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap ev {
+        internal static System.Drawing.Bitmap _3604b9f6_5f0c_4e38_a78b_211217822d42 {
             get {
-                object obj = ResourceManager.GetObject("ev", resourceCulture);
+                object obj = ResourceManager.GetObject("3604b9f6-5f0c-4e38-a78b-211217822d42", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DELONGHI_ECOV3_BLUE {
+            get {
+                object obj = ResourceManager.GetObject("DELONGHI_ECOV3_BLUE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DELONGHI_ECOV311_ {
+            get {
+                object obj = ResourceManager.GetObject("DELONGHI_ECOV311_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DELONGHI_ECOV311_1 {
+            get {
+                object obj = ResourceManager.GetObject("DELONGHI_ECOV311_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delonghi_ecp31_21_ {
+            get {
+                object obj = ResourceManager.GetObject("delonghi ecp31,21_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delonghi_ecp31_21_1 {
+            get {
+                object obj = ResourceManager.GetObject("delonghi ecp31,21_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Delonghi_Esam_460_ {
+            get {
+                object obj = ResourceManager.GetObject("Delonghi_Esam_460_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -103,9 +163,9 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap kisişel_bakım {
+        internal static System.Drawing.Bitmap MOP_2_uLTRA_AKILLI_ {
             get {
-                object obj = ResourceManager.GetObject("kisişel bakım", resourceCulture);
+                object obj = ResourceManager.GetObject("MOP 2 uLTRA AKILLI_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +173,9 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pc {
+        internal static System.Drawing.Bitmap NESPRESSO_J520_ {
             get {
-                object obj = ResourceManager.GetObject("pc", resourceCulture);
+                object obj = ResourceManager.GetObject("NESPRESSO_J520_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +183,9 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pc1 {
+        internal static System.Drawing.Bitmap nespresso_j620 {
             get {
-                object obj = ResourceManager.GetObject("pc1", resourceCulture);
+                object obj = ResourceManager.GetObject("nespresso_j620", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,10 +193,9 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap png_transparent_portable_communications_device_mobile_phone_accessories_mobile_phones_smartphone_logo_broken_glass_angle_electronics_gadget {
+        internal static System.Drawing.Bitmap PHILIPS_EP4346_ {
             get {
-                object obj = ResourceManager.GetObject("png-transparent-portable-communications-device-mobile-phone-accessories-mobile-ph" +
-                        "ones-smartphone-logo-broken-glass-angle-electronics-gadget", resourceCulture);
+                object obj = ResourceManager.GetObject("PHILIPS_EP4346_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -144,9 +203,79 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap saat {
+        internal static System.Drawing.Bitmap Philips_EP5447_ {
             get {
-                object obj = ResourceManager.GetObject("saat", resourceCulture);
+                object obj = ResourceManager.GetObject("Philips_EP5447_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Philips_EP5447_1 {
+            get {
+                object obj = ResourceManager.GetObject("Philips_EP5447_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Philips_p2220 {
+            get {
+                object obj = ResourceManager.GetObject("Philips_p2220", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ROBOROCK_Q7_ {
+            get {
+                object obj = ResourceManager.GetObject("ROBOROCK Q7_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ROBOROCK_Q7_MAX_ {
+            get {
+                object obj = ResourceManager.GetObject("ROBOROCK Q7 MAX_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ROBOROCK_S7_ {
+            get {
+                object obj = ResourceManager.GetObject("ROBOROCK S7_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ROBOROCK_S7_SONIC_ {
+            get {
+                object obj = ResourceManager.GetObject("ROBOROCK S7 SONIC_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SAMSUNG_ {
+            get {
+                object obj = ResourceManager.GetObject("SAMSUNG_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -164,9 +293,9 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap tel02 {
+        internal static System.Drawing.Bitmap viomi {
             get {
-                object obj = ResourceManager.GetObject("tel02", resourceCulture);
+                object obj = ResourceManager.GetObject("viomi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -174,29 +303,9 @@ namespace eCommerce.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Telefon {
+        internal static System.Drawing.Bitmap xiomi_s10T {
             get {
-                object obj = ResourceManager.GetObject("Telefon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tv {
-            get {
-                object obj = ResourceManager.GetObject("tv", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap tv1 {
-            get {
-                object obj = ResourceManager.GetObject("tv1", resourceCulture);
+                object obj = ResourceManager.GetObject("xiomi s10T", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
